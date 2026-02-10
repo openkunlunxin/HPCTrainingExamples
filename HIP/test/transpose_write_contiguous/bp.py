@@ -20,6 +20,8 @@ def process_line(line, level):
             # No comment, just add glc at the end
             if level == "l1":
                 return line.rstrip() + ' sc0 nt\n'
+            elif level == "nt":
+                return line.rstrip() + ' nt\n'
             elif level == "l2":
                 return line.rstrip() + ' sc1 nt\n'
             elif level == "all":
@@ -27,7 +29,7 @@ def process_line(line, level):
             else:
                 return line.rstrip() + ' sc0 nt sc1\n'
 
-    if re.search(instr_pattern_s, line):
+    if True: #re.search(instr_pattern_s, line):
         # Skip if glc/dlc/sc0/sc1 is already present
         if re.search(r'\b(glc|dlc|sc0|sc1)\b', line):
             return line

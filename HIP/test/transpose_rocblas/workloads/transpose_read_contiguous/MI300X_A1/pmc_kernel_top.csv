@@ -1,0 +1,2 @@
+Kernel_Name,Count,Sum(ns),Mean(ns),Median(ns),Pct
+"transpose_kernel_read_contiguous(double const*, double*, int, int)",11,6817725.40625,619793.21875,622860.84375,100.0

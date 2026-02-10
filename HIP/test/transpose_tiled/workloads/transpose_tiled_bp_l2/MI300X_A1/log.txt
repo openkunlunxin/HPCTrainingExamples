@@ -1,0 +1,291 @@
+Rocprofiler-Compute version: 3.4.0
+Profiler choice: rocprofiler-sdk
+Path: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1
+Target: MI300X_A1
+Command: ./transpose_tiled_bp_l2
+Kernel Selection: None
+Dispatch Selection: None
+Filtered sections: All
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Collecting Performance Counters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[Run 1/13][Approximate profiling time left: pending first measurement...]
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQC_DCACHE_INFLIGHT_LEVEL.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:37.134442 138449980368896 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110402 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:37.139110 138449980368896 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:14:37.481564 138449980368896 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 835.40 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:14:38.262197 138449980368896 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.123081 sec
+   |-> [rocprofiler-sdk] E20260210 12:14:38.271200 138449980368896 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18333_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:38.284528 138449980368896 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18333_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:38.292431 138449980368896 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18333_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:14:38.295973 138449980368896 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032343 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:38.296065 138449980368896 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032488 sec
+[Run 2/13][Approximate profiling time left: 41 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQC_ICACHE_INFLIGHT_LEVEL.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:40.888616 140436562884608 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110276 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:40.893282 140436562884608 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:14:41.236845 140436562884608 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 825.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:14:42.018275 140436562884608 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.124989 sec
+   |-> [rocprofiler-sdk] E20260210 12:14:42.027306 140436562884608 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18341_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:42.040623 140436562884608 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18341_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:42.048660 140436562884608 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18341_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:14:42.052030 140436562884608 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032128 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:42.052105 140436562884608 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032235 sec
+[Run 3/13][Approximate profiling time left: 37 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQ_IFETCH_LEVEL.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:44.703101 139755126384640 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.121187 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:44.707780 139755126384640 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:14:45.050470 139755126384640 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 816.60 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:14:45.831045 139755126384640 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.123265 sec
+   |-> [rocprofiler-sdk] E20260210 12:14:45.839981 139755126384640 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18349_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:45.853678 139755126384640 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18349_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:45.862231 139755126384640 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18349_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:14:45.865786 139755126384640 simple_timer.cpp:55] [rocprofv3] output generation ::     0.033106 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:45.865885 139755126384640 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.033243 sec
+[Run 4/13][Approximate profiling time left: 33 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQ_INST_LEVEL_LDS.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:48.577071 131142801655808 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.120055 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:48.581701 131142801655808 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:14:48.923747 131142801655808 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 796.80 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:14:49.707709 131142801655808 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.126008 sec
+   |-> [rocprofiler-sdk] E20260210 12:14:49.716770 131142801655808 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18357_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:49.730098 131142801655808 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18357_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:49.738673 131142801655808 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18357_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:14:49.742218 131142801655808 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032828 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:49.742312 131142801655808 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032957 sec
+[Run 5/13][Approximate profiling time left: 30 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQ_INST_LEVEL_SMEM.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:52.328706 138363675314176 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110618 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:52.333376 138363675314176 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:14:52.675086 138363675314176 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 767.80 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:14:53.454562 138363675314176 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.121186 sec
+   |-> [rocprofiler-sdk] E20260210 12:14:53.463754 138363675314176 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18365_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:53.477699 138363675314176 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18365_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:53.485744 138363675314176 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18365_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:14:53.489273 138363675314176 simple_timer.cpp:55] [rocprofv3] output generation ::     0.033091 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:53.489349 138363675314176 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.033191 sec
+[Run 6/13][Approximate profiling time left: 26 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQ_INST_LEVEL_VMEM.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:56.064670 126528704911360 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.111070 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:56.069308 126528704911360 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:14:56.411076 126528704911360 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 746.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:14:57.187753 126528704911360 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.118445 sec
+   |-> [rocprofiler-sdk] E20260210 12:14:57.198105 126528704911360 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18373_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:57.211465 126528704911360 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18373_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:14:57.219107 126528704911360 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18373_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:14:57.222619 126528704911360 simple_timer.cpp:55] [rocprofv3] output generation ::     0.031817 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:57.222678 126528704911360 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.031917 sec
+[Run 7/13][Approximate profiling time left: 22 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/SQ_LEVEL_WAVES.txt
+   |-> [rocprofiler-sdk] W20260210 12:14:59.856341 138572820633600 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.113412 sec
+   |-> [rocprofiler-sdk] W20260210 12:14:59.860672 138572820633600 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:00.208084 138572820633600 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 1141.60 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:00.999824 138572820633600 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.139153 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:01.008847 138572820633600 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18381_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:01.022303 138572820633600 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18381_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:01.030134 138572820633600 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18381_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:01.033664 138572820633600 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032148 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:01.033722 138572820633600 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032243 sec
+[Run 8/13][Approximate profiling time left: 18 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/pmc_perf_0.txt
+   |-> [rocprofiler-sdk] W20260210 12:15:03.655066 130119931033600 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.111552 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:03.659363 130119931033600 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:04.007373 130119931033600 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 1129.20 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:04.792327 130119931033600 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.132964 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:04.800954 130119931033600 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18404_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:04.814194 130119931033600 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18404_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:04.822014 130119931033600 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18404_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:04.825489 130119931033600 simple_timer.cpp:55] [rocprofv3] output generation ::     0.031827 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:04.825560 130119931033600 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.031932 sec
+[Run 9/13][Approximate profiling time left: 15 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/pmc_perf_1.txt
+   |-> [rocprofiler-sdk] W20260210 12:15:07.446727 140316961892352 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110130 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:07.451031 140316961892352 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:07.799224 140316961892352 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 860.40 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:08.612695 140316961892352 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.161664 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:08.622439 140316961892352 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18412_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:08.636259 140316961892352 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18412_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:08.644197 140316961892352 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18412_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:08.647697 140316961892352 simple_timer.cpp:55] [rocprofv3] output generation ::     0.033277 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:08.647785 140316961892352 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.033430 sec
+[Run 10/13][Approximate profiling time left: 11 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/pmc_perf_2.txt
+   |-> [rocprofiler-sdk] W20260210 12:15:11.254423 128896708270080 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.111239 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:11.259130 128896708270080 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:11.602507 128896708270080 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 492.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:12.402269 128896708270080 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.143139 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:12.411024 128896708270080 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18420_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:12.424814 128896708270080 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18420_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:12.432619 128896708270080 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18420_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:12.436189 128896708270080 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032640 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:12.436276 128896708270080 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032770 sec
+[Run 11/13][Approximate profiling time left: 7 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/pmc_perf_3.txt
+   |-> [rocprofiler-sdk] W20260210 12:15:15.054055 135718075934720 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.111320 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:15.058687 135718075934720 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:15.403923 135718075934720 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 502.80 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:16.185916 135718075934720 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.127229 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:16.194680 135718075934720 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18428_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:16.208138 135718075934720 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18428_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:16.215737 135718075934720 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18428_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:16.219278 135718075934720 simple_timer.cpp:55] [rocprofv3] output generation ::     0.031923 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:16.219352 135718075934720 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032031 sec
+[Run 12/13][Approximate profiling time left: 3 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/pmc_perf_4.txt
+   |-> [rocprofiler-sdk] W20260210 12:15:18.852609 133104866592768 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110338 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:18.857309 133104866592768 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:19.201183 133104866592768 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 454.40 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:19.980664 133104866592768 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.123355 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:19.989967 133104866592768 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18436_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:20.003349 133104866592768 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18436_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:20.010935 133104866592768 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18436_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:20.014476 133104866592768 simple_timer.cpp:55] [rocprofv3] output generation ::     0.031955 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:20.014551 133104866592768 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032066 sec
+[Run 13/13][Approximate profiling time left: 0 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/perfmon/pmc_perf_5.txt
+   |-> [rocprofiler-sdk] W20260210 12:15:22.492852 126679020214272 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.100826 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:22.497471 126679020214272 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Tiled Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ========================================
+   |-> [rocprofiler-sdk] W20260210 12:15:22.840949 126679020214272 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Tiled Transpose, Read and Write Contiguous - Average Time: 432.60 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:15:23.616363 126679020214272 simple_timer.cpp:55] [rocprofv3] './transpose_tiled_bp_l2' ::     1.118893 sec
+   |-> [rocprofiler-sdk] E20260210 12:15:23.626426 126679020214272 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18444_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:23.640263 126679020214272 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18444_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:15:23.647526 126679020214272 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1/out/pmc_1/8a0ce9b46bee/18444_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:15:23.651087 126679020214272 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032079 sec
+   |-> [rocprofiler-sdk] W20260210 12:15:23.651153 126679020214272 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032181 sec
+PC sampling data collection skipped as block 21 is not specified.
+[roofline] Checking for roofline.csv in /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1
+[roofline] Empirical Roofline PDFs saved!
+[roofline] Checking for roofline.csv in /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_tiled/workloads/transpose_tiled_bp_l2/MI300X_A1
+[roofline] Empirical Roofline PDFs saved!

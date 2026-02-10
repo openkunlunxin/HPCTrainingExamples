@@ -20,13 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-CXX   = hipcc
 ROCM_GPU ?= $(strip $(shell rocminfo |grep -m 1 -E gfx[^0]{1} | sed -e 's/ *Name: *//'))
-CXXFLAGS = --offload-arch=${ROCM_GPU}
 
-EXAMPLE := main
-COMMON_INCLUDE_DIR := ../../Common
-EXTERNAL_DIR := ../../External
+EXAMPLE := transpose_tiled
 GPU_RUNTIME ?= HIP
 
 # HIP variables
@@ -37,8 +33,8 @@ HIPCXX ?= $(ROCM_INSTALL_DIR)/bin/hipcc
 
 # Common variables and flags
 CXX_STD   := c++17
-ICXXFLAGS := -std=$(CXX_STD)
-ICPPFLAGS := -I $(COMMON_INCLUDE_DIR) -I $(EXTERNAL_DIR)
+ICXXFLAGS := -std=$(CXX_STD) --offload-arch=${ROCM_GPU}
+ICPPFLAGS := 
 ILDFLAGS  :=
 ILDLIBS   :=
 BP_LV     ?= l1
@@ -59,11 +55,6 @@ ILDFLAGS  += $(LDFLAGS)
 ILDLIBS   += $(LDLIBS)
 ILDLIBS   += -lrocblas
 
-transpose_timed.o: transpose_kernels.h
-transpose_kernel_read_contiguous.o: transpose_kernels.h
-transpose_kernel_write_contiguous.o: transpose_kernels.h
-transpose_kernel_tiled.o: transpose_kernels.h
-
 DEV_ASM: $(EXAMPLE)-dev.s
 
 ASM_BP: $(EXAMPLE)-dev_bp.s
@@ -82,16 +73,16 @@ BIN_BP: $(EXAMPLE)_bp_$(BP_LV)
 
 BIN: $(EXAMPLE)
 
-SRCS :=  transpose_timed.o transpose_kernel_read_contiguous.o transpose_kernel_write_contiguous.o  transpose_kernel_tiled.o
+SRCS :=  $(EXAMPLE).cpp
 
 $(EXAMPLE)-dev_bp_$(BP_LV).s: bp.py $(EXAMPLE)-dev.s
 	python3 $^ $(BP_LV) $@
 
-$(EXAMPLE)-dev.s: transpose_kernels.h
-	$(HIPCXX) -S --cuda-device-only --offload-arch=gfx942 $(ICXXFLAGS) $(ICPPFLAGS) $(ILDFLAGS) -o $@ $(SRCS) $(ILDLIBS)
+$(EXAMPLE)-dev.s: $(SRCS)
+	$(HIPCXX) -S --cuda-device-only $(ICXXFLAGS) $(ICPPFLAGS) $(ILDFLAGS) -o $@ $< $(ILDLIBS)
 
 $(EXAMPLE)-host.o: $(SRCS)
-	$(HIPCXX) -c --cuda-host-only $(ICXXFLAGS) $(ICPPFLAGS) $(ILDFLAGS) -o $@ $(SRCS) $(ILDLIBS)
+	$(HIPCXX) -c --cuda-host-only $(ICXXFLAGS) $(ICPPFLAGS) $(ILDFLAGS) -o $@ $< $(ILDLIBS)
 
 $(EXAMPLE)-host.mcin: $(EXAMPLE)-host.o $(EXAMPLE)-dev_bp_$(BP_LV).hipfb
 	./gen_mcin $^ > $@
@@ -110,7 +101,7 @@ $(EXAMPLE)_bp_$(BP_LV): $(EXAMPLE)-host.o $(EXAMPLE)-dev_em_bp_$(BP_LV).o
 
 
 $(EXAMPLE):$(SRCS)
-	$(HIPCXX) $(ICXXFLAGS) $(ICPPFLAGS) $(ILDFLAGS) -o $@ $(SRCS) $(ILDLIBS)
+	$(HIPCXX) $(ICXXFLAGS) $(ICPPFLAGS) $(ILDFLAGS) -o $@ $< $(ILDLIBS)
 
 clean:
 	$(RM) $(EXAMPLE) $(EXAMPLE)-host* $(EXAMPLE)-dev* $(EXAMPLE)_bp*

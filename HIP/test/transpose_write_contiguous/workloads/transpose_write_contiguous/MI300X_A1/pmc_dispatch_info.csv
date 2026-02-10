@@ -1,0 +1,7 @@
+Dispatch_ID,Kernel_Name,GPU_ID
+0,"transpose_kernel_write_contiguous(double const*, double*, int, int)",0
+1,"transpose_kernel_write_contiguous(double const*, double*, int, int)",0
+2,"transpose_kernel_write_contiguous(double const*, double*, int, int)",0
+3,"transpose_kernel_write_contiguous(double const*, double*, int, int)",0
+4,"transpose_kernel_write_contiguous(double const*, double*, int, int)",0
+5,"transpose_kernel_write_contiguous(double const*, double*, int, int)",0

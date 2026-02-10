@@ -1,0 +1,6 @@
+  .type __hip_fatbin_213141ef92a37cf8,@object
+  .section .__hip_fatbin_213141ef92a37cf8,"a",@progbits
+  .globl __hip_fatbin_213141ef92a37cf8
+  .p2align 12
+__hip_fatbin_213141ef92a37cf8:
+  .incbin "transpose_tiled-dev_bp_nt.hipfb"

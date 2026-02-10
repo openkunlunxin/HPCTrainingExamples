@@ -1,0 +1,292 @@
+Rocprofiler-Compute version: 3.4.0
+Profiler choice: rocprofiler-sdk
+Path: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1
+Target: MI300X_A1
+Command: ./transpose_write_contiguous
+Kernel Selection: None
+Dispatch Selection: None
+Filtered sections: All
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Collecting Performance Counters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[Run 1/13][Approximate profiling time left: pending first measurement...]
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQC_DCACHE_INFLIGHT_LEVEL.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:18.736109 137607356672000 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.111191 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:18.740800 137607356672000 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:19.082939 137607356672000 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 915.40 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:19.867089 137607356672000 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.126290 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:19.876509 137607356672000 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20670_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:19.889845 137607356672000 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20670_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:19.897754 137607356672000 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20670_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:19.901296 137607356672000 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032421 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:19.901388 137607356672000 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032578 sec
+[Run 2/13][Approximate profiling time left: 40 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQC_ICACHE_INFLIGHT_LEVEL.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:22.468428 123927751440384 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110326 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:22.473062 123927751440384 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:22.816633 123927751440384 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 907.80 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:23.599228 123927751440384 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.126166 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:23.608433 123927751440384 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20678_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:23.622279 123927751440384 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20678_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:23.630313 123927751440384 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20678_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:23.633851 123927751440384 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032746 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:23.633927 123927751440384 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032857 sec
+[Run 3/13][Approximate profiling time left: 37 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQ_IFETCH_LEVEL.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:26.267950 125340757645312 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.121945 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:26.272720 125340757645312 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:26.616123 125340757645312 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 884.20 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:27.421927 125340757645312 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.149207 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:27.431015 125340757645312 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20686_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:27.444771 125340757645312 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20686_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:27.453428 125340757645312 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20686_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:27.456968 125340757645312 simple_timer.cpp:55] [rocprofv3] output generation ::     0.033711 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:27.457089 125340757645312 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.033876 sec
+[Run 4/13][Approximate profiling time left: 33 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQ_INST_LEVEL_LDS.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:30.153224 123481760454656 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.124591 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:30.157876 123481760454656 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:30.499979 123481760454656 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 858.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:31.284797 123481760454656 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.126921 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:31.294288 123481760454656 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20694_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:31.308169 123481760454656 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20694_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:31.316993 123481760454656 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20694_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:31.320573 123481760454656 simple_timer.cpp:55] [rocprofv3] output generation ::     0.033712 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:31.320691 123481760454656 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.033864 sec
+[Run 5/13][Approximate profiling time left: 30 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQ_INST_LEVEL_SMEM.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:33.890313 125471410018304 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.113851 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:33.894990 125471410018304 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:34.238594 125471410018304 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 844.60 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:35.022561 125471410018304 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.127568 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:35.032178 125471410018304 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20702_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:35.045490 125471410018304 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20702_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:35.053442 125471410018304 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20702_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:35.057021 125471410018304 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032608 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:35.057108 125471410018304 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032749 sec
+[Run 6/13][Approximate profiling time left: 26 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQ_INST_LEVEL_VMEM.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:37.629063 139344063944704 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.112162 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:37.633753 139344063944704 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:37.977300 139344063944704 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 804.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:38.760677 139344063944704 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.126923 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:38.769568 139344063944704 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20710_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:38.782987 139344063944704 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20710_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:38.790710 139344063944704 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20710_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:38.794221 139344063944704 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032045 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:38.794296 139344063944704 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032153 sec
+[Run 7/13][Approximate profiling time left: 22 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/SQ_LEVEL_WAVES.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:41.343318 136962681174016 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.111425 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:41.347954 136962681174016 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:41.691371 136962681174016 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 824.60 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:42.476258 136962681174016 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.128304 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:42.484966 136962681174016 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20718_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:42.498308 136962681174016 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20718_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:42.505929 136962681174016 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20718_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:42.509435 136962681174016 simple_timer.cpp:55] [rocprofv3] output generation ::     0.031773 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:42.509510 136962681174016 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.031885 sec
+[Run 8/13][Approximate profiling time left: 18 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/pmc_perf_0.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:45.056559 137272509261824 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.112751 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:45.061266 137272509261824 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:45.398476 137272509261824 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 794.40 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:46.180702 137272509261824 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.119436 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:46.189699 137272509261824 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20726_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:46.203001 137272509261824 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20726_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:46.210633 137272509261824 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20726_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:46.214153 137272509261824 simple_timer.cpp:55] [rocprofv3] output generation ::     0.031842 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:46.214234 137272509261824 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.031974 sec
+[Run 9/13][Approximate profiling time left: 15 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/pmc_perf_1.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:48.764542 137070433826816 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.112602 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:48.769241 137070433826816 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:49.113198 137070433826816 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 696.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:49.895092 137070433826816 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.125851 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:49.904308 137070433826816 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20734_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:49.917538 137070433826816 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20734_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:49.925321 137070433826816 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20734_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:49.928838 137070433826816 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032138 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:49.928909 137070433826816 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032247 sec
+[Run 10/13][Approximate profiling time left: 11 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/pmc_perf_2.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:52.487161 123240647006208 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110204 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:52.491847 123240647006208 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:52.835808 123240647006208 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 570.20 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:53.663172 123240647006208 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.171326 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:53.672083 123240647006208 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20742_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:53.686138 123240647006208 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20742_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:53.694111 123240647006208 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20742_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:53.697681 123240647006208 simple_timer.cpp:55] [rocprofv3] output generation ::     0.033098 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:53.697773 123240647006208 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.033232 sec
+[Run 11/13][Approximate profiling time left: 7 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/pmc_perf_3.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:56.229902 127051936987136 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.113015 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:56.234544 127051936987136 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:48:56.580578 127051936987136 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 569.00 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:48:57.361794 127051936987136 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.127251 sec
+   |-> [rocprofiler-sdk] E20260210 12:48:57.371243 127051936987136 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20750_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:57.385043 127051936987136 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20750_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:48:57.392993 127051936987136 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20750_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:48:57.396544 127051936987136 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032702 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:57.396628 127051936987136 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032817 sec
+[Run 12/13][Approximate profiling time left: 3 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/pmc_perf_4.txt
+   |-> [rocprofiler-sdk] W20260210 12:48:59.961826 132368044595200 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.110027 sec
+   |-> [rocprofiler-sdk] W20260210 12:48:59.966500 132368044595200 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:49:00.310437 132368044595200 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 527.80 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:49:01.093978 132368044595200 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.127478 sec
+   |-> [rocprofiler-sdk] E20260210 12:49:01.102817 132368044595200 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20764_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:49:01.116279 132368044595200 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20764_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:49:01.123988 132368044595200 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20764_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:49:01.127539 132368044595200 simple_timer.cpp:55] [rocprofv3] output generation ::     0.032041 sec
+   |-> [rocprofiler-sdk] W20260210 12:49:01.127619 132368044595200 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.032155 sec
+[Run 13/13][Approximate profiling time left: 0 seconds]...
+[profiling] Current input file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/perfmon/pmc_perf_5.txt
+   |-> [rocprofiler-sdk] W20260210 12:49:03.564636 139776668145664 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.101251 sec
+   |-> [rocprofiler-sdk] W20260210 12:49:03.569329 139776668145664 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     0.000000 sec
+   |-> [rocprofiler-sdk] AMD GPU Write Contiguous Matrix Transpose Benchmark
+   |-> [rocprofiler-sdk] ===================================================
+   |-> [rocprofiler-sdk] W20260210 12:49:03.912688 139776668145664 tool.cpp:2422] HSA version 8.20.0 initialized (instance=0)
+   |-> [rocprofiler-sdk] 
+   |-> [rocprofiler-sdk] Testing Matrix dimensions: 8192 x 8192
+   |-> [rocprofiler-sdk] Input size: 512 MiB
+   |-> [rocprofiler-sdk] Output size: 512 MiB
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Basic Transpose, Write Contiguous - Average Time: 497.60 μs
+   |-> [rocprofiler-sdk] =========================================
+   |-> [rocprofiler-sdk] Verification: PASSED
+   |-> [rocprofiler-sdk] W20260210 12:49:04.694384 139776668145664 simple_timer.cpp:55] [rocprofv3] './transpose_write_contiguous' ::     1.125054 sec
+   |-> [rocprofiler-sdk] E20260210 12:49:04.703367 139776668145664 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20781_kernel_trace.csv
+   |-> [rocprofiler-sdk] E20260210 12:49:04.716690 139776668145664 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20781_counter_collection.csv
+   |-> [rocprofiler-sdk] E20260210 12:49:04.723375 139776668145664 output_stream.cpp:111] Opened result file: /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1/out/pmc_1/8a0ce9b46bee/20781_agent_info.csv
+   |-> [rocprofiler-sdk] W20260210 12:49:04.726879 139776668145664 simple_timer.cpp:55] [rocprofv3] output generation ::     0.030978 sec
+   |-> [rocprofiler-sdk] W20260210 12:49:04.726946 139776668145664 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.031078 sec
+PC sampling data collection skipped as block 21 is not specified.
+[roofline] Checking for roofline.csv in /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1
+[roofline] No roofline data found. Generating...
+[roofline] Empirical Roofline PDFs saved!
+[roofline] Checking for roofline.csv in /root/sunyongshuai/HPCTrainingExamples/HIP/test/transpose_write_contiguous/workloads/transpose_write_contiguous/MI300X_A1
+[roofline] Empirical Roofline PDFs saved!
