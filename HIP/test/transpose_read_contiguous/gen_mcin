@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <object_file.o> <offload_bunfle.hipfb>" >&2
+    exit 1
+fi
+
+TARGET_OBJ="$1"
+HIPFB_FILE="$2"
+
+# Check if the file exists
+if [ ! -f "$TARGET_OBJ" ]; then
+    echo "Error: File '$TARGET_OBJ' not found." >&2
+    exit 1
+fi
+
+# 1. Extract the hex ID from the undefined fatbin symbol
+FATBIN_ID=$(nm "$TARGET_OBJ" | grep "fatbin" | grep " U " | head -n 1 | awk '{print $2}' | sed 's/__hip_fatbin_//')
+
+if [ -z "$FATBIN_ID" ]; then
+    echo "Error: Could not find __hip_fatbin_ symbol in $TARGET_OBJ" >&2
+    exit 1
+fi
+
+FULL_SYMBOL="__hip_fatbin_${FATBIN_ID}"
+
+# 2. Print the assembly code to stdout
+echo "  .type $FULL_SYMBOL,@object"
+echo "  .section .${FULL_SYMBOL},\"a\",@progbits"
+echo "  .globl $FULL_SYMBOL"
+echo "  .p2align 12"
+echo "$FULL_SYMBOL:"
+echo "  .incbin \"${HIPFB_FILE}\""
